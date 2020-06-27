@@ -1,3 +1,8 @@
 {
     "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/include"
+    ],
 }
