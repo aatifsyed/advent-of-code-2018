@@ -2,6 +2,29 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <limits.h>
+#include <stdbool.h>
+
+/**
+ * @brief Does long l exist in array larr?
+ * 
+ * @param larr 
+ * @param nmemb 
+ * @param l 
+ * @return true 
+ * @return false 
+ */
+bool larr_containsl(const long *larr, unsigned int nmemb, long l)
+{
+    for (int i = 0; i < nmemb; i++)
+    {
+        if (larr[i] == l)
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
 
 /**
  * @brief Print array

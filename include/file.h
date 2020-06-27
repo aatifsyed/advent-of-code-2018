@@ -1,5 +1,17 @@
 #ifndef FILE_INCLUDED
 #define FILE_INCLUDED
+#include <stdbool.h>
+
+/**
+ * @brief Does long l exist in array larr?
+ * 
+ * @param larr 
+ * @param nmemb 
+ * @param l 
+ * @return true 
+ * @return false 
+ */
+bool larr_containsl(const long *larr, unsigned int nmemb, long l);
 
 /**
  * @brief Print array
