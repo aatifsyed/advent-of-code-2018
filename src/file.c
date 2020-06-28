@@ -113,6 +113,8 @@ int fgetlarr(const char *name, long **larr, unsigned int *nmemb)
         assert(ret == 0);
     }
 
+    free(buffer);
+
     fclose(file);
     return 0;
 }

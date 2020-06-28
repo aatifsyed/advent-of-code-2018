@@ -2,3 +2,6 @@
 bin
 lib
 obj
+
+# notes and experiments
+src/scratch*
