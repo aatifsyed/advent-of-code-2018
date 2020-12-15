@@ -4,11 +4,11 @@ LIB_DIR=./lib
 INC_DIR=./include
 OBJ_DIR=./obj
 
-LIBS=pthread rt file clist
+LIBS=pthread rt file clist bstrlib
 LFLAGS=$(addprefix -l, $(LIBS))
 
 CC=clang
-CFLAGS=-I$(INC_DIR) -L$(LIB_DIR) $(LFLAGS)
+CFLAGS=-I$(INC_DIR) -L$(LIB_DIR) $(LFLAGS) -fPIE
 
 %:$(SRC_DIR)/%.c 
 	$(CC) -o $(BIN_DIR)/$@ $^ $(CFLAGS)

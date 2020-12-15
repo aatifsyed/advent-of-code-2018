@@ -4,4 +4,4 @@ lib
 obj
 
 # Experiments and notes
-src/scratch*
+src/scratch*env

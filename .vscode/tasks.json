@@ -12,7 +12,8 @@
                 "-I./include",
                 "-L./lib",
                 "-lpthread",
-                "-lrt"
+                "-lrt",
+                "-lclist"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
